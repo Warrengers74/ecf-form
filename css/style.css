@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #F0F3FA;
+    color: #1A1B41;
+}
+::selection {
+    background: #D57A66;
+    color: #fcfcfc;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    border: solid 1px #D57A66;
+    object-fit: cover;
+}
+form  {
+    margin: -20px 0;
+    /* width: 360px; */
+}
+form input, form textarea {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #1A1B41;
+    background: #fcfcfc;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #D57A66;
+}
+
+form input:focus, form textarea:focus {
+    outline: solid 2px #D57A66;
+}
+form input::selection, form textarea::selection {
+    color: #fcfcfc;
+    background: #D57A66;
+}
+form input[type=submit] {
+    width: calc(100% + 20px);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    background: #D57A66;
+    color: #fcfcfc;
+    transition: 0.5s;
+}
+form input[type=submit]:hover {
+    background: #fcfcfc;
+    color:#D57A66;
+    border: 3px solid #D57A66;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        display:block;
+        margin: 20px;
+    }
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    form {
+        width: 100%;
+    }
+    form input, form textarea {
+        margin-left: -10px;
+    }
+    .labels {
+        display: flex;
+        width: calc(100% + 30px);
+        margin-bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .labels {
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+}
