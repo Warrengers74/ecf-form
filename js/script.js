@@ -1,11 +1,10 @@
 let submitForm = document.getElementById("form");
 
 submitForm.addEventListener("submit", (e) => {
-  console.log("hello");
+  e.preventDefault();
   let form = new FormData(submitForm);
-  fetch("form.php", {
+  fetch("./php/form.php", {
     method: "POST",
     body: form,
   });
-  e.preventDefault();
 });
