@@ -32,7 +32,6 @@ form  {
 }
 form input, form textarea {
     font-family: 'Raleway', sans-serif;
-    /* font-weight: 600; */
     font-size: 1rem;
     color: #1A1B41;
     background: #fcfcfc;
@@ -75,6 +74,9 @@ form input[type=submit]:hover {
     img {
         width: 100%;
         margin-bottom: 20px;
+    }
+    form {
+        width: 100%;
     }
     form input, form textarea {
         margin-left: -10px;
