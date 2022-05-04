@@ -74,7 +74,13 @@ form input[type=submit]:hover {
     border: 3px solid #D57A66;
     transition: 0.5s;
 }
-
+#alert {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: green;
+    margin-left: 20px;
+}
 @media screen and (max-width: 900px) {
     .container {
         display:block;

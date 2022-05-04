@@ -17,6 +17,7 @@
         <form name="dataForm" id="form" action="form.php" method="post">
           <div class="labels">
             <input
+            id="name"
               type="text"
               name="name"
               placeholder="Your full name*"
@@ -36,8 +37,10 @@
             rows="10"
             placeholder="Your message*"
             required
+            minlength="2" maxlength="500"
           ></textarea>
           <input id="submit" type="submit" value="Send" />
+          <span id="alert"></span>
         </form>
       </div>
     </main>
