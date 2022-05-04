@@ -43,8 +43,16 @@ form input, form textarea {
     border: solid 1px #D57A66;
 }
 
-form input:focus, form textarea:focus {
+/* form input:focus, form textarea:focus {
     outline: solid 2px #D57A66;
+} */
+form input:valid, form textarea:valid {
+    outline: 1px solid green;
+    border: 0;
+}
+form input:focus:invalid, form textarea:focus:invalid {
+    outline: 2px dashed red;
+    border: 0;
 }
 form input::selection, form textarea::selection {
     color: #fcfcfc;
@@ -58,6 +66,7 @@ form input[type=submit] {
     background: #D57A66;
     color: #fcfcfc;
     transition: 0.5s;
+    outline: 0;
 }
 form input[type=submit]:hover {
     background: #fcfcfc;

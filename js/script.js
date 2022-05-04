@@ -7,4 +7,6 @@ submitForm.addEventListener("submit", (e) => {
     method: "POST",
     body: form,
   });
+  document.dataForm.reset()
 });
+
