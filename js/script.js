@@ -24,12 +24,16 @@ email.addEventListener("keyup", () => {
 });
 
 let fullname = document.getElementById("name");
-let regexName = /^[a-zA-ZÜ-ü-' ]{2,50}$/;
+let regexName = /^[a-zA-ZÜ-ü-' ]*$/;
 
 fullname.addEventListener("keyup", () => {
-  if(fullname.value.match(regexName)) {
-    fullname.setCustomValidity("");
+  if(!fullname.value.match(regexName)) {
+    fullname.setCustomValidity("Some characters are not allowed");
+  }else if(fullname.value.length < 2) {
+    fullname.setCustomValidity("2 characters minimum");
+  } else if (fullname.value.length > 10) {
+    fullname.setCustomValidity("50 characters maximum")
   } else {
-    fullname.setCustomValidity("Between 2 and 50 characters. Some characters are not allowed");
+    fullname.setCustomValidity("");
   }
 });

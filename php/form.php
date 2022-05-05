@@ -6,7 +6,5 @@
             Email : " . $_POST["email"] . "
             Message : " . $_POST["message"];
             $retour = mail("warrengers.dev@gmail.com", 'ECF Contact Form', $message, "From:contact@monsite.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
-            if ($retour) {
-              echo "<p>L'email a bien été envoyé.</p>";
-            }
+            
           }
