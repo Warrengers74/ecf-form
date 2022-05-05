@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
 
-
 body {
     font-family: 'Raleway', sans-serif;
     background: #F0F3FA;
     color: #1A1B41;
 }
+
 ::selection {
     background: #D57A66;
     color: #fcfcfc;
@@ -26,10 +26,11 @@ img {
     border: solid 1px #D57A66;
     object-fit: cover;
 }
+
 form  {
     margin: -20px 0;
-    /* width: 360px; */
 }
+
 form input, form textarea {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
@@ -43,21 +44,21 @@ form input, form textarea {
     border: solid 1px #D57A66;
 }
 
-/* form input:focus, form textarea:focus {
-    outline: solid 2px #D57A66;
-} */
 form input:valid, form textarea:valid {
     outline: 1px solid green;
     border: 0;
 }
+
 form input:focus:invalid, form textarea:focus:invalid {
     outline: 2px dashed red;
     border: 0;
 }
+
 form input::selection, form textarea::selection {
     color: #fcfcfc;
     background: #D57A66;
 }
+
 form input[type=submit] {
     width: calc(100% + 20px);
     text-transform: uppercase;
@@ -68,12 +69,14 @@ form input[type=submit] {
     transition: 0.5s;
     outline: 0;
 }
+
 form input[type=submit]:hover {
     background: #fcfcfc;
     color:#D57A66;
     border: 3px solid #D57A66;
     transition: 0.5s;
 }
+
 #alert {
     width: 100%;
     display: flex;
@@ -81,6 +84,7 @@ form input[type=submit]:hover {
     color: green;
     margin-left: 20px;
 }
+
 @media screen and (max-width: 900px) {
     .container {
         display:block;

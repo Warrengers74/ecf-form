@@ -2,8 +2,8 @@
 
 ## Links : 
 
-[figma](https://www.figma.com/file/jsoaetO9ErglTPVKdYzutJ/ecf-form?node-id=0%3A1)
-[github](https://github.com/Warrengers74/ecf-form)
+- [figma](https://www.figma.com/file/jsoaetO9ErglTPVKdYzutJ/ecf-form?node-id=0%3A1)
+- [github](https://github.com/Warrengers74/ecf-form)
 
 ## Sujet :
 

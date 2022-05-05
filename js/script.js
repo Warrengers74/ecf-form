@@ -1,6 +1,11 @@
 let submitForm = document.getElementById("form");
 let alert = document.getElementById("alert");
+let email = document.getElementById("mail");
+let regexMail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,6}$/;
+let fullname = document.getElementById("name");
+let regexName = /^[a-zA-ZÜ-ü-' ]*$/;
 
+// envoi des données du formulaire
 submitForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let form = new FormData(submitForm);
@@ -12,9 +17,7 @@ submitForm.addEventListener("submit", (e) => {
   alert.innerHTML = "**Your message has been sent**"
 });
 
-let email = document.getElementById("mail");
-let regexMail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,6}$/;
-
+// verification du champs "email"
 email.addEventListener("keyup", () => {
   if(email.value.match(regexMail)) {
     email.setCustomValidity("");
@@ -23,9 +26,7 @@ email.addEventListener("keyup", () => {
   }
 });
 
-let fullname = document.getElementById("name");
-let regexName = /^[a-zA-ZÜ-ü-' ]*$/;
-
+// verification du champs "full name"
 fullname.addEventListener("keyup", () => {
   if(!fullname.value.match(regexName)) {
     fullname.setCustomValidity("Some characters are not allowed");
