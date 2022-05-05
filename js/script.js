@@ -32,7 +32,7 @@ fullname.addEventListener("keyup", () => {
     fullname.setCustomValidity("Some characters are not allowed");
   }else if(fullname.value.length < 2) {
     fullname.setCustomValidity("2 characters minimum");
-  } else if (fullname.value.length > 10) {
+  } else if (fullname.value.length > 50) {
     fullname.setCustomValidity("50 characters maximum")
   } else {
     fullname.setCustomValidity("");
